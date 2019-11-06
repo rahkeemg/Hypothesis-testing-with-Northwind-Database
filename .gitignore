@@ -1,2 +1,4 @@
-.DS_store
-.ipynb_checkpoints
+#Ignore the folders `.idea`, `.learn`, `.`
+.vscode/
+__pycache__/
+.idea/
