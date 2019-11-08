@@ -1,92 +1,94 @@
 
-# Module 3 -  Final Project Specifications
+# Hypothesis Testing with the Northwind Database
 
-## Introduction
-
-In this lesson, we'll review all the guidelines and specifications for the final project for Module 3.
-
-## Objectives
-
-* Understand all required aspects of the Final Project for Module 3
-* Understand all required deliverables
-* Understand what constitutes a successful project
-
-### Final Project Summary
-
-Another module down--you're half way there!
-
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/halfway-there.gif'>
-
-For the culmination of Module 3, you just need to complete the final project!
-
-### The Project
-
-For this project, you'll be working with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company. You probably remember the Northwind database from our section on Advanced SQL. Here's the schema for the Northwind database:
+For this project, we will be working with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company. Here's the schema for the Northwind database:
 
 <img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
 
-The goal of this project is to test your ability to gather information from a real-world database and use your knowledge of statistical analysis and hypothesis testing to generate analytical insights that can be of value to the company.
+## Purpose: 
 
-## The Deliverables
+The purpose of this project is to practice hypothesis testing and answer the following questions in the process:
+    
+**Question_1**: _Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_
 
-The goal of your project is to query the database to get the data needed to perform a statistical analysis.  In this statistical analysis, you'll need to perform a hypothesis test (or perhaps several) to answer the following question:
+**Question_2:** _Is there a significant difference between local and international sales?_
 
-**_Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_**
+**Question_3:** _Do the category/type of goods have a significant impact on the quantity ordered?_
 
-In addition to answering this question with a hypothesis test, you will also need to come up with **_at least 3 other hypotheses to test on your own_**.  These can by anything that you think could be imporant information for the company.
+**Question_4:** _Are there certain products that have a significant statistical difference, within the revenue generated with respective catgories?_
 
-For this hypothesis, be sure to specify both the **_null hypothesis_** and the **_alternative hypothesis_** for your question.  You should also specify if this is one-tail or a two-tail test.
+## Questions & Summary
 
-For online students, there will be four deliverables for this project:
+#### **Question_1:**  _Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_
 
-1. A **_Jupyter Notebook_** containing any code you've written for this project. This work will need to be pushed to your GitHub repository in order to submit your project.
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A **_[Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging)_**.
-4. An **_"Executive Summary" PowerPoint Presentation_** that explains the hypothesis tests you ran, your findings, and their relevance to company stakeholders.  
+##### Summary:
+    Based on the statistics and the test received from the data, discounts are significant in determining the quantity of goods sold.  However, the level of discount does not seem to very different amongst the different discounts. 
 
-Note: On-campus students may have different delivarables, please speak with your instructor. 
+    To better capture the results of our tests, discounts levels without sufficient data were removed from our analysis.
 
-### Jupyter Notebook Must-Haves
+    The following discounts were removed:
 
-For this project, your Jupyter Notebook should meet the following specifications:
+    0.01, 0.02, 0.03, 0.04, & 0.06
 
-**_Organization/Code Cleanliness_**
+    The higher discounts has an advantage over the lower ones that we did compare, but due to the large magnitutde of the p-test ran, the difference is slighty greater due to associated effect sizes.
 
-* The notebook should be well organized, easy to follow, and code is commented where appropriate.  
-<br>  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.  
-<br>      
-* The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.  
-<br>    
-* Any SQL code written to source data should also be included.  
+    For full notebook information and testing, click on the link below:
 
-**_Findings_**
-
-* Your notebook should clearly show how you arrived at your results for each hypothesis test, including how you calculated your p-values.   
-<br>
-* You should also include any other statistics that you find relevant to your analysis, such as effect size.
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+[Question_1 Notebook](Question_1.ipynb)
+______________________
 
 
-### Executive Summary Must-Haves
+#### Question_2: _Is there a significant difference between local and international sales?_
 
-Your presentation should:
 
-* Contain between 5-10 professional quality slides detailing:
-<br>  
-    * A high-level overview of your methodology  
-    <br>  
-    * The results of your hypothesis tests  
-    <br>  
-    * Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company?)  
-    <br>  
-* Take no more than 5 minutes to present  
-<br>  
-* Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.  
+##### Summary
 
-## Grading Rubric 
+    Based on the results of our test, there is a significant difference in quantities of products ordered and sales generated in foreign regions compared to North America, when we look at them region by regions(North America, Scadindavia, Western Europe, etc).  This difference is only seen when we compare North America to Southern Europe.
 
-Online students can find a PDF of the grading rubric for this project [here](https://github.com/learn-co-curriculum/dsc-mod-3-project/blob/master/module3_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
+    When we look at the difference between North America and the cumulative results of every other region, there does not seem to be a significant differece.  There does seem to be a slight one, but not one that is large enough to be noteworthy, based on our graphs.
+
+For full notebook information and testing, click on the link below:
+
+[Question_2 Notebook](Question_2.ipynb)
+
+_______________________
+
+#### Question_3:  _Do the category/type of goods have a significant impact on the quantity ordered?_
+
+##### Summary: 
+
+       - Based on the results of the test performed, a significant difference was not found for one category of goods over another.
+
+For full notebook information and testing, click on the link below:
+
+[Question_3 Notebook](Question_3.ipynb)
+________________________
+
+#### Question_4:  _Are there certain products that have a significant statistical difference, within the revenue generated with respective catgories?_
+
+##### Summary
+
+* **Grains/Cereal**
+       - Gnocchi di nonna Alice & Wimmers gute Semmelknödel are the two products that stood out the most compared to others within the grain/cereal category.  They both share the top spot for the most significant grain products that have impacts on sales.
+
+* **Seafood**
+      - Carnarvon Tigers stood out compared to all other products.  
+      - Based on the data, I recommend marketing this product even more to clients.
+
+* **Confections:**
+      - Schoggi Schokolade was one product that stood apart from many of the other products sold by the company.
+      - This good has a more significant stastical impact than all other confections, with the exception of Sir Rodney's Marmalade.
+      - **This good should be marketed more heavily**
+
+* **Beverages** 
+       - Côte de Blaye is the beverage that has the most significant impact on sales, over all other beverages.
+       - This product should be marketed more heavily
+
+* **Dairy Products, Produce, Condiments, & Meat/Poultry**
+       - There was not a specific dairy product that outperformed a majority of the others sold.  
+       - They all tend to have the same amount of significance statistically.
+
+
+For full notebook information and testing, click on the link below:
+
+[Question_4 Notebook](Question_4.ipynb)
