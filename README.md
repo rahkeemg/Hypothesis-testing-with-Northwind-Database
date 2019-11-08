@@ -22,17 +22,18 @@ The purpose of this project is to practice hypothesis testing and answer the fol
 #### **Question_1:**  _Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_
 
 ##### Summary:
-    Based on the statistics and the test received from the data, discounts are significant in determining the quantity of goods sold.  However, the level of discount does not seem to very different amongst the different discounts. 
 
-    To better capture the results of our tests, discounts levels without sufficient data were removed from our analysis.
+Based on the statistics and the test received from the data, discounts are significant in determining the quantity of goods sold.  However, the level of discount does not seem to very different amongst the different discounts. 
 
-    The following discounts were removed:
+To better capture the results of our tests, discounts levels without sufficient data were removed from our analysis.
 
-    0.01, 0.02, 0.03, 0.04, & 0.06
+The following discounts were removed:
 
-    The higher discounts has an advantage over the lower ones that we did compare, but due to the large magnitutde of the p-test ran, the difference is slighty greater due to associated effect sizes.
+0.01, 0.02, 0.03, 0.04, & 0.06
 
-    For full notebook information and testing, click on the link below:
+The higher discounts has an advantage over the lower ones that we did compare, but due to the large magnitutde of the p-test ran, the difference is slighty greater due to associated effect sizes.
+
+For full notebook information and testing, click on the link below:
 
 [Question_1 Notebook](Question_1.ipynb)
 ______________________
@@ -43,9 +44,9 @@ ______________________
 
 ##### Summary
 
-    Based on the results of our test, there is a significant difference in quantities of products ordered and sales generated in foreign regions compared to North America, when we look at them region by regions(North America, Scadindavia, Western Europe, etc).  This difference is only seen when we compare North America to Southern Europe.
+Based on the results of our test, there is a significant difference in quantities of products ordered and sales generated in foreign regions compared to North America, when we look at them region by regions(North America, Scadindavia, Western Europe, etc).  This difference is only seen when we compare North America to Southern Europe.
 
-    When we look at the difference between North America and the cumulative results of every other region, there does not seem to be a significant differece.  There does seem to be a slight one, but not one that is large enough to be noteworthy, based on our graphs.
+When we look at the difference between North America and the cumulative results of every other region, there does not seem to be a significant differece.  There does seem to be a slight one, but not one that is large enough to be noteworthy, based on our graphs.
 
 For full notebook information and testing, click on the link below:
 
@@ -57,7 +58,7 @@ _______________________
 
 ##### Summary: 
 
-       - Based on the results of the test performed, a significant difference was not found for one category of goods over another.
+   - Based on the results of the test performed, a significant difference was not found for one category of goods over another.
 
 For full notebook information and testing, click on the link below:
 
@@ -92,3 +93,8 @@ ________________________
 For full notebook information and testing, click on the link below:
 
 [Question_4 Notebook](Question_4.ipynb)
+
+
+```python
+
+```
